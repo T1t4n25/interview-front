@@ -14,8 +14,9 @@ export interface InterviewData {
 export interface ApiResponse {
   room_name: string;
   token: string;
-  websocket_url: string;
+  websocket_url?: string; // Make optional
   message: string;
+  [key: string]: any; // Allow additional fields
 }
 
 export interface AgentResponse {
